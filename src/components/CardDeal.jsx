@@ -17,9 +17,12 @@ const CardDeal = () => (
       </p>
       <Button text='Get Started' styles='mt-10' />
     </div>
-    <AnimatedImage styles={layout.sectionImg} reverse>
-      <img src={card} alt='card' className='w-[100%] h-[100%]' />
-    </AnimatedImage>
+
+    <div className={layout.sectionImg}>
+      <AnimatedImage reverse>
+        <img src={card} alt='card' className='w-[100%] h-[100%]' />
+      </AnimatedImage>
+    </div>
   </section>
 );
 

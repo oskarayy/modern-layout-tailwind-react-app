@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
-const AnimatedImage = ({ children, styles, reverse }) => (
+const AnimatedImage = ({ children, reverse }) => (
   <motion.div
-    className={styles}
+    style={{ zIndex: 10 }}
     initial={{ opacity: 0, translateX: reverse ? 100 : -100 }}
     whileInView={{ opacity: 1, translateX: 0 }}
     viewport={{ once: true }}
