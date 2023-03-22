@@ -2,7 +2,7 @@ import { clients } from '../constants';
 import styles from '../style';
 
 const Clients = () => (
-  <section id='clients' className={`${styles.flexCenter} mt-4 mb-12`}>
+  <section id='clients' className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
       {clients.map(({ logo, id }, index) => (
         <div

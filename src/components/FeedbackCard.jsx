@@ -1,7 +1,11 @@
 import { quotes } from '../assets';
+import AnimatedCard from './interface/AnimatedCard';
 
-const FeedbackCard = ({ content, name, title, img }) => (
-  <div className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card'>
+const cardStyles =
+  'flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card';
+
+const FeedbackCard = ({ content, name, title, img, index }) => (
+  <AnimatedCard styles={cardStyles} delay={index * 0.25}>
     <img
       src={quotes}
       alt='double_quotes'
@@ -21,7 +25,7 @@ const FeedbackCard = ({ content, name, title, img }) => (
         </p>
       </div>
     </div>
-  </div>
+  </AnimatedCard>
 );
 
 export default FeedbackCard;

@@ -1,6 +1,8 @@
 import { card } from '../assets';
 import styles, { layout } from '../style';
+
 import Button from './interface/Button';
+import AnimatedImage from './interface/AnimatedImage';
 
 const CardDeal = () => (
   <section id='deal' className={layout.section}>
@@ -15,9 +17,9 @@ const CardDeal = () => (
       </p>
       <Button text='Get Started' styles='mt-10' />
     </div>
-    <div className={layout.sectionImg}>
+    <AnimatedImage styles={layout.sectionImg} reverse>
       <img src={card} alt='card' className='w-[100%] h-[100%]' />
-    </div>
+    </AnimatedImage>
   </section>
 );
 
